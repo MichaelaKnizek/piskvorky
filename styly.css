@@ -1,5 +1,7 @@
 html {
   height: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 body {
@@ -23,14 +25,17 @@ img {
 }
 
 .card {
+  width: 360px;
+  height: 610px;
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
-  width: 30%;
+  position: relative;
+  top: 60px;
 }
 
 .card-text {
   background-color: #283e50;
+  padding: 10px;
 }
 
 .button-pravidla {
