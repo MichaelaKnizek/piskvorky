@@ -36,6 +36,15 @@ img {
 .card-text {
   background-color: #283e50;
   padding: 10px;
+  /* font-size: 1.2rem; */
+}
+
+button {
+  color: #ffffff;
+  /* font-size: 1.2rem; */
+  border: none;
+  padding-block: 20px;
+  cursor: pointer;
 }
 
 .button-pravidla {
