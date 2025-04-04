@@ -21,6 +21,7 @@ body {
   align-items: center;
 }
 
+/* Intro CARD */
 img {
   border-radius: 8px 8px 0 0;
 }
@@ -34,11 +35,8 @@ img {
 
 .card {
   width: 360px;
-  height: 610px;
   display: flex;
   flex-direction: column;
-  position: relative;
-  top: 60px;
 }
 
 .card-text {
