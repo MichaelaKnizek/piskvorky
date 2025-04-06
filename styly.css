@@ -69,3 +69,46 @@ img {
 .button__blue:hover {
   background: #0090e9;
 }
+
+
+/* GAME */
+
+.game {
+  max-width: 80vmin;
+  display: flex;
+  flex-direction: column;
+}
+
+.game-bar {
+  display: flex;
+  align-items: center;
+}
+
+.square {
+  height: 20px;
+  width: 20px;
+  border: 3px solid white;
+  border-radius: 50%;
+  margin: 5px;
+}
+
+.game-icon {
+  padding: 11px 8px 11px 8px;
+  border-radius: 5px;
+}
+
+.icon__green {
+  background-color: #1fcca4;
+}
+
+.icon__blue {
+  background-color: #0197f6;
+}
+
+.icon__green:hover {
+  background: #1cbb96;
+}
+
+.icon__blue:hover {
+  background: #0090e9;
+}
