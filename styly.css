@@ -82,6 +82,14 @@ img {
 .game-bar {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  margin: 5px;
+  width: 300px;
+}
+
+.game-player {
+  display: flex;
+  align-items: center;
 }
 
 .square {
@@ -111,4 +119,22 @@ img {
 
 .icon__blue:hover {
   background: #0090e9;
+}
+
+.game-field {
+  display: flex;
+  flex-wrap: wrap;
+  font-family: 0;
+  width: 300px;
+  margin: 5px;
+  background: linear-gradient(#615dad, #ffc8da);
+}
+
+.game-square {
+  height: 30px;
+  width: 30px;
+  padding: 0;
+  border: 1px solid black;
+  opacity: 0.5;
+  cursor: pointer;
 }
