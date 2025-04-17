@@ -139,3 +139,17 @@ img {
   opacity: 0.5;
   cursor: pointer;
 }
+
+/* Oziveni policek herni plochy */
+
+.game__square--circle {
+  background-image: url("/circleBlack.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.game__square--cross {
+  background-image: url("/crossBlack.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}

@@ -1,0 +1,1 @@
+let currentPlayer = 'circle';
