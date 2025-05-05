@@ -35,6 +35,11 @@ const handleClick = (event) => {
       alert(`Vyhrál hráč se symbolem ${vitez}.`);
       location.reload();
     }, 150);
+  } else if (!herniPole.includes('_')) {
+    setTimeout(() => {
+      alert('Hra skončila nerozhodně.');
+      location.reload();
+    }, 150);
   }
 };
 
