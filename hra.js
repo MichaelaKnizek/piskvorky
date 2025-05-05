@@ -29,7 +29,10 @@ const handleClick = (event) => {
     }
   });
 
-  console.log(herniPole);
+  const vitez = findWinner(herniPole);
+  if (vitez === 'o' || vitez === 'x') {
+    alert(`Vyhrál hráč se symbolem ${vitez}.`);
+  }
 };
 
 buttons.forEach((button) => {
