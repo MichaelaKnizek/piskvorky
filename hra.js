@@ -32,6 +32,7 @@ const handleClick = (event) => {
   const vitez = findWinner(herniPole);
   if (vitez === 'o' || vitez === 'x') {
     alert(`Vyhrál hráč se symbolem ${vitez}.`);
+    location.reload();
   }
 };
 
