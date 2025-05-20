@@ -5,6 +5,18 @@ let currentPlayer = 'circle';
 const kdoHraje = document.querySelector('.symbol');
 const buttons = document.querySelectorAll('.game-square');
 
+const aiMove = async () => {
+  const herniPole = Array.from(buttons).map((button) => {
+    if (button.classList.contains('game__square--circle')) {
+      return 'o';
+    } else if (button.classList.contains('game__square--cross')) {
+      return 'x';
+    } else {
+      return '_';
+    }
+  });
+};
+
 const handleClick = (event) => {
   kdoHraje.classList.remove('symbol', 'symbol__circle', 'symbol__cross');
 
