@@ -71,6 +71,10 @@ const handleClick = (event) => {
       alert('Hra skončila nerozhodně.');
       location.reload();
     }, 150);
+  } else if (currentPlayer === 'cross') {
+    setTimeout(() => {
+      aiMove();
+    }, 250);
   }
 };
 
