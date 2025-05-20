@@ -15,6 +15,25 @@ const aiMove = async () => {
       return '_';
     }
   });
+
+  const response = await fetch(
+    'https://piskvorky.czechitas-podklady.cz/api/suggest-next-move',
+    {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        board: herniPole,
+        player: 'x',
+      }),
+    },
+  );
+
+  const data = await response.json();
+  const { x, y } = data.position;
+  const index = x + y * 10;
+  buttons[index].click();
 };
 
 const handleClick = (event) => {
